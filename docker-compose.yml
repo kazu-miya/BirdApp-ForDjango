@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+
+  nginx: #ここを追加する
+    image: nginx:1.13
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+      - ./static:/static #staticも繋ぐ
+    depends_on:
+      - web
+
+  db-postgres:
+    image: postgres
+    ports:
+      - "5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    
+  web:
+    build: ./web
+    volumes:
+      - ./src:/code
+      - ./static:/static
+    expose:
+      - "8080" #ポートフォワードじゃなくて普通にport空ける
+    depends_on:
+      - db-postgres
+    command: uwsgi --socket :8080 --module bird_pictures.wsgi #uwsgi起動に変更

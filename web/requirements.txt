@@ -1,0 +1,7 @@
+Django==2.2.2
+psycopg2==2.8.4
+uwsgi==2.0.17
+django-allauth==0.42.0
+pillow==6.0.0
+selenium==3.141.0
+django-widget-tweaks~=1.4.8
