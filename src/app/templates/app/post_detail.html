@@ -4,10 +4,15 @@
 
 <h2 class="my-4">{{ post_data.title }}</h2>
 <hr>
-<p>{{ post_data.created }} by {{ post_data.author }}</p>
+<p>{{ post_data.created }} by {{ post_data.author.first_name }} {{ post_data.author.last_name }}</p>
+<hr>
+{% if post_data.image %}
+<img class="rounded detail-img" src="{{ post_data.image.url }}" alt="">        
+{% endif %}
 <hr>
 <p>{{ post_data.content|linebreaksbr }}</p>
-{% if request.user.id == post_data.author.id %}
+<!--以下で対象ユーザーのみボタン表示させる-->
+{% if request.user.id == post_data.author.id or user.is_superuser%}
 <hr>
 <div class="d-flex mb-5">
     <a class="btn btn-warning mr-2" href="{% url 'post_edit' post_data.id %}">編集する</a>

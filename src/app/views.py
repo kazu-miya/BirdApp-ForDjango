@@ -1,10 +1,16 @@
+import io
+import sys
 from django.shortcuts import render, redirect
 
 from django.views.generic import TemplateView, View
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Post
 from .forms import PostForm
+from PIL import Image
+from django.conf import settings
 
+from django.core.files.uploadedfile import InMemoryUploadedFile
+from .main import Square_main,Select_image
 
 class IndexView(TemplateView):
     login_url = '/accounts/login/'
@@ -52,6 +58,8 @@ class CreatePostView(LoginRequiredMixin, View):
             post_data.author = request.user
             post_data.title = form.cleaned_data['title']
             post_data.content = form.cleaned_data['content']
+            if request.FILES:
+                post_data.image = image_resize(request.FILES['image'])
             post_data.save()
             return redirect('post_detail', post_data.id)
 
@@ -68,6 +76,7 @@ class PostEditView(OnlyYouMixin, View):
             initial={
                 'title': post_data.title,
                 'content': post_data.content,
+                'image': post_data.image,
             }
         )
 
@@ -82,6 +91,8 @@ class PostEditView(OnlyYouMixin, View):
             post_data = Post.objects.get(id=self.kwargs['pk'])
             post_data.title = form.cleaned_data['title']
             post_data.content = form.cleaned_data['content']
+            if request.FILES:
+                post_data.image = request.FILES.get('image') # 追加
             post_data.save()
             return redirect('post_detail', self.kwargs['pk'])
 
@@ -100,3 +111,21 @@ class PostDeleteView(OnlyYouMixin, View):
         post_data = Post.objects.get(id=self.kwargs['pk'])
         post_data.delete()
         return redirect('index')
+
+##画像変換
+def image_resize(field):
+
+    if field:
+        im = Image.open(field)
+        img = Square_main(im)
+        #変換処理ここまで
+        #野鳥が複数羽いる場合、大きい方を出力
+        output = io.BytesIO()
+        img.save(output, format='JPEG', quality=85)
+        output.seek(0)
+        return InMemoryUploadedFile(output, 'ImageField',
+                                    field.name,
+                                    'image/jpeg',
+                                    sys.getsizeof(output), None)
+    else:
+        return None

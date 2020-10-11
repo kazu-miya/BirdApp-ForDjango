@@ -95,3 +95,16 @@ main {
 .formpost {
     margin-bottom: 1rem;
 }
+
+/* index */
+.index-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* detail */
+.detail-img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
