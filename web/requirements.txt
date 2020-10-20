@@ -7,3 +7,4 @@ selenium==3.141.0
 django-widget-tweaks~=1.4.8
 keras==2.2.5
 tensorflow==1.14.0
+memory_profiler==0.57.0

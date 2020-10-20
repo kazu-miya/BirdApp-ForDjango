@@ -51,6 +51,34 @@ def Square_main(im):
         im_new = expand2square(im, GetPixel(im))
     return im_new
 
+#取得したデータを整える
+#bird以外なら切り捨てる
+def CatchData(r):    
+    r_arr=np.array(r, dtype=object)
+    #物体座標代入,a.shape[0]で物体の個数
+    a=r_arr[:,2]
+    #座標格納
+    c_p=[]
+    for i in range(0,a.shape[0]):
+        c_p.append(a[i])
+    c=np.array(c_p)
+    return c
+
+#aa
+def ImgCrop(coordinate,image):    
+    #座標代入
+    width=coordinate[0,2]
+    height=coordinate[0,3]
+    x=coordinate[0,0]-(width/2)
+    y=coordinate[0,1]-(height/2)
+    #切り取り
+    if width >= height:
+        Ly=y*((500-width)/(500-height))
+        cropped_img=image.crop((x,Ly,x+width,Ly+width))
+    else:
+        Lx=x*((500-height)/(500-width))
+        cropped_img=image.crop((Lx,y,Lx+height,y+height))
+    return cropped_img
 
 def Select_image(crop_images):
     #抽出画像の中で最も大きいものを選択

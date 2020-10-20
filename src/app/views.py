@@ -1,5 +1,9 @@
 import io
 import sys
+import os
+import gc
+import math
+import tempfile
 from django.shortcuts import render, redirect
 
 from django.views.generic import TemplateView, View
@@ -9,8 +13,12 @@ from .forms import PostForm
 from PIL import Image
 from django.conf import settings
 
+from memory_profiler import profile
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from .main import Square_main,Select_image
+from .darknet.python.darknet import detect, data_load
+from .main import CatchData, ImgCrop, Square_main
+
+net, meta = data_load()
 
 class IndexView(TemplateView):
     login_url = '/accounts/login/'
@@ -59,7 +67,11 @@ class CreatePostView(LoginRequiredMixin, View):
             post_data.title = form.cleaned_data['title']
             post_data.content = form.cleaned_data['content']
             if request.FILES:
-                post_data.image = image_resize(request.FILES['image'])
+                a = image_resize(request.FILES['image'])
+                post_data.image = image_resize2(a)
+                del a
+                gc.collect()
+                
             post_data.save()
             return redirect('post_detail', post_data.id)
 
@@ -118,6 +130,7 @@ def image_resize(field):
     if field:
         im = Image.open(field)
         img = Square_main(im)
+        #mediaの中で最後のファイルが自分のであるはず
         #変換処理ここまで
         #野鳥が複数羽いる場合、大きい方を出力
         output = io.BytesIO()
@@ -127,5 +140,26 @@ def image_resize(field):
                                     field.name,
                                     'image/jpeg',
                                     sys.getsizeof(output), None)
+    else:
+        return None
+#aa
+def image_resize2(field):
+
+    if field:
+        b = detect(net, meta, field)
+        c=CatchData(b)
+        img = Image.open(field)
+        new_img=ImgCrop(c,img)
+        #mediaの中で最後のファイルが自分のであるはず
+        #変換処理ここまで
+        #野鳥が複数羽いる場合、大きい方を出力
+        output = io.BytesIO()
+        new_img.save(output, format='JPEG', quality=85)
+        output.seek(0)
+        return InMemoryUploadedFile(output, 'ImageField',
+                                    field.name,
+                                    'image/jpeg',
+                                    sys.getsizeof(output), None)
+        
     else:
         return None

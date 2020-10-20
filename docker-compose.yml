@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 
 services:
 
@@ -29,6 +29,24 @@ services:
       - ./static:/static
     expose:
       - "8080" #ポートフォワードじゃなくて普通にport空ける
+    mem_limit: 3g
     depends_on:
       - db-postgres
-    command: uwsgi --socket :8080 --module bird_pictures.wsgi #uwsgi起動に変更
+    command: uwsgi --ini /code/bird_pictures/uwsgi.ini #uwsgi起動に変更
+    expose:
+      - "8080"
+    restart: always
+
+#　開発中定義
+#　本番にあげるときはこっちをコメントアウトするよ
+
+#  web:
+#    build: ./web
+#    volumes:
+#      - ./src:/code
+#      - ./static:/static
+#    depends_on:
+#      - db-postgres
+#    command: python manage.py runserver 0.0.0.0:8080
+#    ports:
+#      - "8080:8080"
