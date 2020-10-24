@@ -1,3 +1,4 @@
 *.pyc
 *.jpg
 /migrations/
+src/bird_pictures/settings_local.py

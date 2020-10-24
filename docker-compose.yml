@@ -29,7 +29,7 @@ services:
       - ./static:/static
     expose:
       - "8080" #ポートフォワードじゃなくて普通にport空ける
-    mem_limit: 3g
+    mem_limit: 2g
     depends_on:
       - db-postgres
     command: uwsgi --ini /code/bird_pictures/uwsgi.ini #uwsgi起動に変更

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from .settings_local import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -18,9 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ue8$majj3_#kckufvijs5@8ebjw=9zw40w$la)2#)oee*%^$+&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,13 +35,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'widget_tweaks', # 追加
-    'app', # 追加
-    'accounts', # 追加
-    'django.contrib.sites', # 追加
-    'allauth', # 追加
-    'allauth.account', # 追加
-    'allauth.socialaccount' # 追加
+    'widget_tweaks', 
+    'app', 
+    'accounts', 
+    'django.contrib.sites', 
+    'allauth', 
+    'allauth.account', 
+    'allauth.socialaccount' 
 ]
 
 MIDDLEWARE = [
@@ -75,21 +73,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'bird_pictures.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db-postgres',
-        'PORT': 5432,
-    }
-}
 
 
 # Password validation
