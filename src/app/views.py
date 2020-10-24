@@ -16,7 +16,7 @@ from django.conf import settings
 from memory_profiler import profile
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from .darknet import detect, data_load
-from .main import CatchData, ImgCrop, Square_main
+from .main import CatchData, ImgCrop, Square_main, Select_image
 
 net, meta = data_load()
 
@@ -149,12 +149,13 @@ def image_resize2(field):
         b = detect(net, meta, field)
         c=CatchData(b)
         img = Image.open(field)
-        new_img=ImgCrop(c,img)
+        crop_images=ImgCrop(c,img)
+        big_img = Select_image(crop_images)
         #mediaの中で最後のファイルが自分のであるはず
         #変換処理ここまで
         #野鳥が複数羽いる場合、大きい方を出力
         output = io.BytesIO()
-        new_img.save(output, format='JPEG', quality=85)
+        big_img.save(output, format='JPEG', quality=85)
         output.seek(0)
         return InMemoryUploadedFile(output, 'ImageField',
                                     field.name,

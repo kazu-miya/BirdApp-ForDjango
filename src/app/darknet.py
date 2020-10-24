@@ -4,7 +4,6 @@ import random
 import gc
 import tempfile
 from PIL import Image
-from memory_profiler import profile
 
 def sample(probs):
     s = sum(probs)
@@ -135,7 +134,7 @@ def detect(net, meta, field, thresh=.5, hier_thresh=.5, nms=.45, debug= False):
     print(ret)
     return ret
 
-@profile
+
 def detect_image(net, meta, im, thresh=.5, hier_thresh=.5, nms=.45, debug= False):
     num = c_int(0)
     pnum = pointer(num)

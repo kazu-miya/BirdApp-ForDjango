@@ -55,18 +55,17 @@ def Square_main(im):
 #bird以外なら切り捨てる
 def CatchData(r):    
     r_arr=np.array(r, dtype=object)
-    #物体座標代入,a.shape[0]で物体の個数
-    a=r_arr[:,2]
-    #座標格納
     c_p=[]
-    for i in range(0,a.shape[0]):
-        c_p.append(a[i])
+    for k in range(0, r_arr.shape[0]):
+        if r_arr[k, 0] == b'bird':
+            c_p.append(r_arr[k, 2])
     c=np.array(c_p)
     return c
 
 #aa
 def ImgCrop(coordinate,image):    
     #座標代入
+    crop_images=[]
     width=coordinate[0,2]
     height=coordinate[0,3]
     x=coordinate[0,0]-(width/2)
@@ -78,7 +77,8 @@ def ImgCrop(coordinate,image):
     else:
         Lx=x*((500-height)/(500-width))
         cropped_img=image.crop((Lx,y,Lx+height,y+height))
-    return cropped_img
+    crop_images.append(cropped_img)
+    return crop_images
 
 def Select_image(crop_images):
     #抽出画像の中で最も大きいものを選択
