@@ -35,11 +35,15 @@ services:
     command: uwsgi --ini /code/bird_pictures/uwsgi.ini #uwsgi起動に変更
     expose:
       - "8080"
-    restart: always
+
+  git:
+    build: ./web
+    command: git clone https://github.com/pjreddie/darknet.git
+    depends_on:
+      - web
 
 #　開発中定義
 #　本番にあげるときはこっちをコメントアウトするよ
-
 #  web:
 #    build: ./web
 #    volumes:

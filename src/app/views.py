@@ -15,7 +15,7 @@ from django.conf import settings
 
 from memory_profiler import profile
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from .darknet.python.darknet import detect, data_load
+from .darknet import detect, data_load
 from .main import CatchData, ImgCrop, Square_main
 
 net, meta = data_load()

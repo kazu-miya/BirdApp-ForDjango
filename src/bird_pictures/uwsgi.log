@@ -12476,3 +12476,1358 @@ Line #    Mem usage    Increment   Line Contents
 [pid: 1|app: 0|req: 32/32] 192.168.99.1 () {44 vars in 2509 bytes} [Sat Oct 17 19:01:10 2020] GET /media/images/Cardinal11.jpg => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
 [pid: 1|app: 0|req: 33/33] 192.168.99.1 () {44 vars in 2528 bytes} [Sat Oct 17 19:02:06 2020] GET /post/42/ => generated 1912 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
 [pid: 1|app: 0|req: 34/34] 192.168.99.1 () {44 vars in 2509 bytes} [Sat Oct 17 19:02:06 2020] GET /media/images/Cardinal11.jpg => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Oct 20 15:24:19 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: ae6a0044beb2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55b104d75e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Oct 20 15:28:51 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: ae6a0044beb2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f98557ae70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Oct 20 15:28:58 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: ae6a0044beb2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56007b43fe70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Oct 20 15:34:35 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: fd20eda52e51
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5587450d2e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5587450d2e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Oct 20 15:47:21 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 61426be8237c
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55a349348e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a349348e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Oct 23 02:03:33 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 61426be8237c
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f1e10a1e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Oct 23 02:03:46 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 61426be8237c
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5557a8b21e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 10 seconds on interpreter 0x5557a8b21e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Oct 23 02:11:13 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: f290c59e7a2d
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x555f5f728e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x555f5f728e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:01:23 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: f290c59e7a2d
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x563a5fd0ce70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563a5fd0ce70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:04:03 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 2269409b9ef6
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55b5359c5e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:14:10 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 2269409b9ef6
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56461f42be70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:34:01 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: efa819cb7702
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56534fb53e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:35:27 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: efa819cb7702
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55b3abea8e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:41:36 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: efa819cb7702
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code/darknet
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f98664fe70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+Traceback (most recent call last):
+  File "/code/bird_pictures/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.7/site-packages/django/conf/__init__.py", line 157, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'bird_pictures'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:52:51 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5581f8203e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5581f8203e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:53:46 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55e073e90e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e073e90e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 04:55:43 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5637c847be70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5637c847be70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:03:52 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x561c01405e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x561c01405e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:05:27 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f2c86cae70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f2c86cae70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:07:53 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56270edb4e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56270edb4e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:16:32 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 4b2ad094236e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x561fddf5ee70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x561fddf5ee70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:17:39 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55ced1c64e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55ced1c64e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:23:44 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5601b3694e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5601b3694e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:27:44 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x557a77ddae70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557a77ddae70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:40:20 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55a9c8688e70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a9c8688e70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:40:39 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x562668f6ce70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x562668f6ce70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:46:14 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55ddd291ee70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ddd291ee70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Oct 24 05:55:16 2020] ***
+compiled with version: 8.3.0 on 20 October 2020 14:29:05
+os: Linux-4.19.130-boot2docker #1 SMP Mon Jun 29 23:52:55 UTC 2020
+nodename: 674f11b7f3c0
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.9 (default, Sep 10 2020, 17:09:36)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55864b7bde70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55864b7bde70 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1, cores: 1)
+layer     filters    size              input                output
+    0 conv     32  3 x 3 / 1   608 x 608 x   3   ->   608 x 608 x  32  0.639 BFLOPs
+    1 conv     64  3 x 3 / 2   608 x 608 x  32   ->   304 x 304 x  64  3.407 BFLOPs
+    2 conv     32  1 x 1 / 1   304 x 304 x  64   ->   304 x 304 x  32  0.379 BFLOPs
+    3 conv     64  3 x 3 / 1   304 x 304 x  32   ->   304 x 304 x  64  3.407 BFLOPs
+    4 res    1                 304 x 304 x  64   ->   304 x 304 x  64
+    5 conv    128  3 x 3 / 2   304 x 304 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+    6 conv     64  1 x 1 / 1   152 x 152 x 128   ->   152 x 152 x  64  0.379 BFLOPs
+    7 conv    128  3 x 3 / 1   152 x 152 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+    8 res    5                 152 x 152 x 128   ->   152 x 152 x 128
+    9 conv     64  1 x 1 / 1   152 x 152 x 128   ->   152 x 152 x  64  0.379 BFLOPs
+   10 conv    128  3 x 3 / 1   152 x 152 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+   11 res    8                 152 x 152 x 128   ->   152 x 152 x 128
+   12 conv    256  3 x 3 / 2   152 x 152 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   13 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   14 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   15 res   12                  76 x  76 x 256   ->    76 x  76 x 256
+   16 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   17 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   18 res   15                  76 x  76 x 256   ->    76 x  76 x 256
+   19 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   20 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   21 res   18                  76 x  76 x 256   ->    76 x  76 x 256
+   22 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   23 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   24 res   21                  76 x  76 x 256   ->    76 x  76 x 256
+   25 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   26 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   27 res   24                  76 x  76 x 256   ->    76 x  76 x 256
+   28 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   29 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   30 res   27                  76 x  76 x 256   ->    76 x  76 x 256
+   31 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   32 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   33 res   30                  76 x  76 x 256   ->    76 x  76 x 256
+   34 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   35 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   36 res   33                  76 x  76 x 256   ->    76 x  76 x 256
+   37 conv    512  3 x 3 / 2    76 x  76 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   38 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   39 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   40 res   37                  38 x  38 x 512   ->    38 x  38 x 512
+   41 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   42 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   43 res   40                  38 x  38 x 512   ->    38 x  38 x 512
+   44 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   45 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   46 res   43                  38 x  38 x 512   ->    38 x  38 x 512
+   47 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   48 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   49 res   46                  38 x  38 x 512   ->    38 x  38 x 512
+   50 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   51 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   52 res   49                  38 x  38 x 512   ->    38 x  38 x 512
+   53 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   54 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   55 res   52                  38 x  38 x 512   ->    38 x  38 x 512
+   56 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   57 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   58 res   55                  38 x  38 x 512   ->    38 x  38 x 512
+   59 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   60 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   61 res   58                  38 x  38 x 512   ->    38 x  38 x 512
+   62 conv   1024  3 x 3 / 2    38 x  38 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   63 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   64 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   65 res   62                  19 x  19 x1024   ->    19 x  19 x1024
+   66 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   67 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   68 res   65                  19 x  19 x1024   ->    19 x  19 x1024
+   69 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   70 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   71 res   68                  19 x  19 x1024   ->    19 x  19 x1024
+   72 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   73 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   74 res   71                  19 x  19 x1024   ->    19 x  19 x1024
+   75 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   76 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   77 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   78 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   79 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   80 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   81 conv    255  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 255  0.189 BFLOPs
+   82 yolo
+   83 route  79
+   84 conv    256  1 x 1 / 1    19 x  19 x 512   ->    19 x  19 x 256  0.095 BFLOPs
+   85 upsample            2x    19 x  19 x 256   ->    38 x  38 x 256
+   86 route  85 61
+   87 conv    256  1 x 1 / 1    38 x  38 x 768   ->    38 x  38 x 256  0.568 BFLOPs
+   88 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   89 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   90 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   91 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   92 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   93 conv    255  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 255  0.377 BFLOPs
+   94 yolo
+   95 route  91
+   96 conv    128  1 x 1 / 1    38 x  38 x 256   ->    38 x  38 x 128  0.095 BFLOPs
+   97 upsample            2x    38 x  38 x 128   ->    76 x  76 x 128
+   98 route  97 36
+   99 conv    128  1 x 1 / 1    76 x  76 x 384   ->    76 x  76 x 128  0.568 BFLOPs
+  100 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  101 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+  102 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  103 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+  104 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  105 conv    255  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 255  0.754 BFLOPs
+  106 yolo
+Loading weights from /code/darknet/yolov3.weights...Done!
+[pid: 1|app: 0|req: 1/1] 192.168.99.1 () {44 vars in 2494 bytes} [Sat Oct 24 14:55:24 2020] GET / => generated 1864 bytes in 12211 msecs (HTTP/1.1 200) 4 headers in 195 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 2/2] 192.168.99.1 () {42 vars in 2470 bytes} [Sat Oct 24 14:55:36 2020] GET / => generated 1864 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 195 bytes (1 switches on core 0)
+2020-10-24 14:55:37,082	[WARNING]	/usr/local/lib/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+[pid: 1|app: 0|req: 3/3] 192.168.99.1 () {42 vars in 2371 bytes} [Sat Oct 24 14:55:36 2020] GET /favicon.ico => generated 3233 bytes in 94 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 4/4] 192.168.99.1 () {44 vars in 2499 bytes} [Sat Oct 24 14:55:40 2020] GET /accounts/login/ => generated 2248 bytes in 224 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 5/5] 192.168.99.1 () {52 vars in 2703 bytes} [Sat Oct 24 14:55:47 2020] POST /accounts/login/ => generated 0 bytes in 441 msecs (HTTP/1.1 302) 8 headers in 2161 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 6/6] 192.168.99.1 () {46 vars in 2742 bytes} [Sat Oct 24 14:55:47 2020] GET / => generated 1998 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 7/7] 192.168.99.1 () {44 vars in 2714 bytes} [Sat Oct 24 14:55:49 2020] GET /post/new/ => generated 2226 bytes in 94 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Filename: ./app/darknet.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+   138    308.3 MiB    308.3 MiB   @profile
+   139                             def detect_image(net, meta, im, thresh=.5, hier_thresh=.5, nms=.45, debug= False):
+   140    308.3 MiB      0.0 MiB       num = c_int(0)
+   141    308.3 MiB      0.0 MiB       pnum = pointer(num)
+   142   1650.4 MiB   1342.2 MiB       predict_image(net, im)
+   143   1650.4 MiB      0.0 MiB       dets = get_network_boxes(net, im.w, im.h, thresh, hier_thresh, None, 0, pnum, 0)
+   144   1650.4 MiB      0.0 MiB       num = pnum[0]
+   145   1650.4 MiB      0.0 MiB       if nms:
+   146   1650.4 MiB      0.0 MiB           do_nms_sort(dets, num, meta.classes, nms)
+   147   1650.4 MiB      0.0 MiB       res = []
+   148   1650.4 MiB      0.0 MiB       for j in range(num):
+   149   1650.4 MiB      0.0 MiB           for i in range(meta.classes):
+   150   1650.4 MiB      0.0 MiB               if dets[j].prob[i] > 0:
+   151   1650.4 MiB      0.0 MiB                   b = dets[j].bbox
+   152   1650.4 MiB      0.0 MiB                   res.append((meta.names[i], dets[j].prob[i], (b.x, b.y, b.w, b.h)))
+   153   1650.4 MiB      0.0 MiB       res = sorted(res, key=lambda x: -x[1])
+   154   1650.4 MiB      0.0 MiB       free_detections(dets, num)
+   155   1647.6 MiB      0.0 MiB       free_image(im)
+   156   1647.6 MiB      0.0 MiB       return res
+
+
+[(b'bird', 0.955113410949707, (172.76451110839844, 297.6932373046875, 188.48989868164062, 304.9984130859375))]
+[pid: 1|app: 0|req: 8/8] 192.168.99.1 () {52 vars in 2986 bytes} [Sat Oct 24 14:56:06 2020] POST /post/new/ => generated 0 bytes in 36047 msecs (HTTP/1.1 302) 5 headers in 144 bytes (3 switches on core 0)
+[pid: 1|app: 0|req: 9/9] 192.168.99.1 () {46 vars in 2750 bytes} [Sat Oct 24 14:56:42 2020] GET /post/1/ => generated 1890 bytes in 739 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 10/10] 192.168.99.1 () {44 vars in 2702 bytes} [Sat Oct 24 14:56:44 2020] GET /media/images/Lazuli_Bunting4.jpg => generated 16685 bytes in 798 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 1|app: 0|req: 11/11] 192.168.99.1 () {44 vars in 2703 bytes} [Sat Oct 24 14:56:48 2020] GET / => generated 2594 bytes in 261 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 12/12] 192.168.99.1 () {44 vars in 2695 bytes} [Sat Oct 24 14:56:49 2020] GET /media/images/Lazuli_Bunting4.jpg => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 1|app: 0|req: 13/13] 192.168.99.1 () {44 vars in 2714 bytes} [Sat Oct 24 14:56:54 2020] GET /post/new/ => generated 2226 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Filename: ./app/darknet.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+   138   1653.5 MiB   1653.5 MiB   @profile
+   139                             def detect_image(net, meta, im, thresh=.5, hier_thresh=.5, nms=.45, debug= False):
+   140   1653.5 MiB      0.0 MiB       num = c_int(0)
+   141   1653.5 MiB      0.0 MiB       pnum = pointer(num)
+   142   1653.8 MiB      0.3 MiB       predict_image(net, im)
+   143   1653.8 MiB      0.0 MiB       dets = get_network_boxes(net, im.w, im.h, thresh, hier_thresh, None, 0, pnum, 0)
+   144   1653.8 MiB      0.0 MiB       num = pnum[0]
+   145   1653.8 MiB      0.0 MiB       if nms:
+   146   1653.8 MiB      0.0 MiB           do_nms_sort(dets, num, meta.classes, nms)
+   147   1653.8 MiB      0.0 MiB       res = []
+   148   1653.8 MiB      0.0 MiB       for j in range(num):
+   149   1653.8 MiB      0.0 MiB           for i in range(meta.classes):
+   150   1653.8 MiB      0.0 MiB               if dets[j].prob[i] > 0:
+   151   1653.8 MiB      0.0 MiB                   b = dets[j].bbox
+   152   1653.8 MiB      0.0 MiB                   res.append((meta.names[i], dets[j].prob[i], (b.x, b.y, b.w, b.h)))
+   153   1653.8 MiB      0.0 MiB       res = sorted(res, key=lambda x: -x[1])
+   154   1653.8 MiB      0.0 MiB       free_detections(dets, num)
+   155   1653.8 MiB      0.0 MiB       free_image(im)
+   156   1653.8 MiB      0.0 MiB       return res
+
+
+[(b'bird', 0.9894170761108398, (297.15631103515625, 303.7669372558594, 146.36561584472656, 269.0567321777344))]
+[pid: 1|app: 0|req: 14/14] 192.168.99.1 () {52 vars in 2988 bytes} [Sat Oct 24 14:57:06 2020] POST /post/new/ => generated 0 bytes in 31677 msecs (HTTP/1.1 302) 5 headers in 144 bytes (3 switches on core 0)
+[pid: 1|app: 0|req: 15/15] 192.168.99.1 () {46 vars in 2750 bytes} [Sat Oct 24 14:57:37 2020] GET /post/2/ => generated 1890 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 16/16] 192.168.99.1 () {42 vars in 2647 bytes} [Sat Oct 24 14:57:38 2020] GET /media/images/Lazuli_Bunting2.jpg => generated 18733 bytes in 12 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 1|app: 0|req: 17/17] 192.168.99.1 () {44 vars in 2703 bytes} [Sat Oct 24 14:57:45 2020] GET / => generated 3190 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 1|app: 0|req: 18/18] 192.168.99.1 () {44 vars in 2695 bytes} [Sat Oct 24 14:57:45 2020] GET /media/images/Lazuli_Bunting2.jpg => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 1|app: 0|req: 19/19] 192.168.99.1 () {44 vars in 2695 bytes} [Sat Oct 24 14:57:45 2020] GET /media/images/Lazuli_Bunting4.jpg => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
